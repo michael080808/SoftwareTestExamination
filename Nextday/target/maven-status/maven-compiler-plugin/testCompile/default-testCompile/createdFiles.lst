@@ -1,0 +1,14 @@
+net\mooctest\MonthLegalTest.class
+net\mooctest\MonthEqualsTest.class
+net\mooctest\NextdayWithExceptionTest.class
+net\mooctest\YearIsLeapTest.class
+net\mooctest\DayEqualTest.class
+net\mooctest\DateEqualsTest.class
+net\mooctest\DayIllegalTest.class
+net\mooctest\NextdayTest.class
+net\mooctest\DateTest.class
+net\mooctest\MonthIllegalTest.class
+net\mooctest\CalendarUnitTest.class
+net\mooctest\YearTest.class
+net\mooctest\DayTest.class
+net\mooctest\MonthIncrementTest.class

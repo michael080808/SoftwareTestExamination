@@ -1,0 +1,841 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<coverage
+        xmlns='http://java.sun.com/jcov/namespace'
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:schemaLocation='http://java.sun.com/jcov/namespace coverage.xsd'>
+
+	<head>
+		<property name='coverage.generator.args' val=''/>
+		<property name='coverage.generator.mode' val='BRANCH'/>
+		<property name='coverage.generator.internal' val='include'/>
+		<property name='coverage.generator.include' val=''/>
+		<property name='coverage.generator.exclude' val=''/>
+		<property name='coverage.generator.caller_include' val='.*'/>
+		<property name='coverage.generator.caller_exclude' val=''/>
+		<property name='coverage.created.date' val='2018-11-29'/>
+		<property name='coverage.created.time' val='08:15:12'/>
+		<property name='coverage.generator.fullversion' val='3.0os.beta-2 built: 10 March 2018'/>
+		<property name='coverage.generator.name' val='jcov'/>
+		<property name='coverage.generator.version' val='3.0'/>
+		<property name='coverage.spec.version' val='1.3'/>
+		<property name='java.runtime.version' val='1.8.0_191-b12'/>
+		<property name='java.version' val='1.8.0_191'/>
+		<property name='os.arch' val='amd64'/>
+		<property name='os.name' val='Windows 10'/>
+		<property name='os.version' val='10.0'/>
+		<property name='user.name' val='Dell'/>
+		<property name='dynamic.collected' val='false'/>
+		<property name='id.count' val='191'/>
+	</head>
+	<package name="net.mooctest" moduleName="no_module">
+		<class name="SudokuGenerator" supername="java/lang/Object" checksum="3119811479" source="SudokuGenerator.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="()V" flags=' public' access="1" cons="true" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="0" count="4"/>
+					<exit s="4" e="4" opcode="return"/>
+				</bl>
+				<lt>0=8;</lt>
+			</meth>
+			<meth name="generateRandomSudoku" vmsig="(Lnet/mooctest/SudokuPuzzleType;)Lnet/mooctest/SudokuPuzzle;" flags=' public' access="1" length="217">
+				<bl s="0" e="64">
+					<methenter s="0" e="64" id="1" count="4"/>
+				</bl>
+				<bl s="65" e="73">
+					<fall s="65" e="73" id="10" count="4"/>
+					<br s="71" e="73">
+						<cond s="124" e="151" id="2" count="4" val="true"/>
+						<cond s="74" e="123" id="3" count="43" val="false"/>
+					</br>
+				</bl>
+				<bl s="74" e="123">
+					<goto s="121" e="123">
+						<tg s="65" e="73" id="4" count="43"/>
+					</goto>
+				</bl>
+				<bl s="124" e="151">
+				</bl>
+				<bl s="152" e="158">
+					<fall s="152" e="158" id="11" count="4"/>
+					<br s="156" e="158">
+						<cond s="215" e="216" id="5" count="4" val="true"/>
+						<cond s="159" e="191" id="6" count="124" val="false"/>
+					</br>
+				</bl>
+				<bl s="159" e="191">
+					<br s="189" e="191">
+						<cond s="212" e="214" id="7" count="13" val="true"/>
+						<cond s="192" e="211" id="8" count="111" val="false"/>
+					</br>
+				</bl>
+				<bl s="192" e="211">
+				</bl>
+				<bl s="212" e="214">
+					<fall s="212" e="214" id="12" count="111"/>
+					<goto s="212" e="214">
+						<tg s="152" e="158" id="9" count="124"/>
+					</goto>
+				</bl>
+				<bl s="215" e="216">
+					<exit s="216" e="216" opcode="areturn"/>
+				</bl>
+				<lt>0=11;28=12;37=14;46=16;62=17;74=18;88=19;108=20;118=17;124=24;132=26;149=28;159=29;170=30;181=32;192=33;209=34;212=36;215=38;</lt>
+			</meth>
+			<meth name="backtrackSudokuSolver" vmsig="(IILnet/mooctest/SudokuPuzzle;)Z" flags=' private' access="2" length="187">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="13" count="30817"/>
+					<br s="6" e="8">
+						<cond s="11" e="19" id="14" count="30817" val="true"/>
+						<cond s="9" e="10" id="15" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="10">
+					<exit s="10" e="10" opcode="ireturn"/>
+				</bl>
+				<bl s="11" e="19">
+					<br s="17" e="19">
+						<cond s="149" e="158" id="16" count="43" val="true"/>
+						<cond s="20" e="22" id="17" count="30774" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="22">
+				</bl>
+				<bl s="23" e="32">
+					<fall s="23" e="32" id="38" count="30774"/>
+					<br s="30" e="32">
+						<cond s="146" e="148" id="18" count="30300" val="true"/>
+						<cond s="33" e="47" id="19" count="482586" val="false"/>
+					</br>
+				</bl>
+				<bl s="33" e="47">
+					<br s="45" e="47">
+						<cond s="140" e="145" id="20" count="174739" val="true"/>
+						<cond s="48" e="62" id="21" count="307847" val="false"/>
+					</br>
+				</bl>
+				<bl s="48" e="62">
+					<br s="60" e="62">
+						<cond s="140" e="145" id="22" count="260905" val="true"/>
+						<cond s="63" e="78" id="23" count="46942" val="false"/>
+					</br>
+				</bl>
+				<bl s="63" e="78">
+					<br s="76" e="78">
+						<cond s="140" e="145" id="24" count="16168" val="true"/>
+						<cond s="79" e="99" id="25" count="30774" val="false"/>
+					</br>
+				</bl>
+				<bl s="79" e="99">
+					<br s="97" e="99">
+						<cond s="102" e="111" id="26" count="30770" val="true"/>
+						<cond s="100" e="101" id="27" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="100" e="101">
+					<exit s="101" e="101" opcode="ireturn"/>
+				</bl>
+				<bl s="102" e="111">
+					<br s="109" e="111">
+						<cond s="126" e="137" id="28" count="30731" val="true"/>
+						<cond s="112" e="123" id="29" count="39" val="false"/>
+					</br>
+				</bl>
+				<bl s="112" e="123">
+					<br s="121" e="123">
+						<cond s="140" e="145" id="30" count="4" val="true"/>
+						<cond s="124" e="125" id="31" count="35" val="false"/>
+					</br>
+				</bl>
+				<bl s="124" e="125">
+					<exit s="125" e="125" opcode="ireturn"/>
+				</bl>
+				<bl s="126" e="137">
+					<br s="135" e="137">
+						<cond s="140" e="145" id="32" count="30296" val="true"/>
+						<cond s="138" e="139" id="33" count="435" val="false"/>
+					</br>
+				</bl>
+				<bl s="138" e="139">
+					<exit s="139" e="139" opcode="ireturn"/>
+				</bl>
+				<bl s="140" e="145">
+					<goto s="143" e="145">
+						<tg s="23" e="32" id="34" count="482112"/>
+					</goto>
+				</bl>
+				<bl s="146" e="148">
+					<goto s="146" e="148">
+						<tg s="179" e="186" id="35" count="30300"/>
+					</goto>
+				</bl>
+				<bl s="149" e="158">
+					<br s="156" e="158">
+						<cond s="169" e="178" id="36" count="39" val="true"/>
+						<cond s="159" e="168" id="37" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="159" e="168">
+					<exit s="168" e="168" opcode="ireturn"/>
+				</bl>
+				<bl s="169" e="178">
+					<exit s="178" e="178" opcode="ireturn"/>
+				</bl>
+				<bl s="179" e="186">
+					<exit s="186" e="186" opcode="ireturn"/>
+				</bl>
+				<lt>0=52;9=53;11=57;20=60;33=63;79=66;93=69;100=70;102=74;112=75;126=77;140=60;149=86;159=87;169=89;179=94;185=97;</lt>
+			</meth>
+		</class>
+		<class name="SudokuPuzzle" supername="java/lang/Object" checksum="804212480" source="SudokuPuzzle.java" flags=' public'>
+			<meth name="&lt;init&gt;" vmsig="(IIII[Ljava/lang/String;)V" flags=' public' access="1" cons="true" length="72">
+				<bl s="0" e="71">
+					<methenter s="0" e="71" id="39" count="9"/>
+					<exit s="71" e="71" opcode="return"/>
+				</bl>
+				<lt>0=14;4=15;9=16;14=17;19=18;25=19;31=20;47=21;63=22;67=23;71=24;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Lnet/mooctest/SudokuPuzzle;)V" flags=' public' access="1" cons="true" length="173">
+				<bl s="0" e="61">
+					<methenter s="0" e="61" id="40" count="5"/>
+				</bl>
+				<bl s="62" e="69">
+					<fall s="62" e="69" id="53" count="5"/>
+					<br s="67" e="69">
+						<cond s="108" e="125" id="41" count="5" val="true"/>
+						<cond s="70" e="71" id="42" count="52" val="false"/>
+					</br>
+				</bl>
+				<bl s="70" e="71">
+				</bl>
+				<bl s="72" e="79">
+					<fall s="72" e="79" id="54" count="52"/>
+					<br s="77" e="79">
+						<cond s="102" e="107" id="43" count="52" val="true"/>
+						<cond s="80" e="101" id="44" count="598" val="false"/>
+					</br>
+				</bl>
+				<bl s="80" e="101">
+					<goto s="99" e="101">
+						<tg s="72" e="79" id="45" count="598"/>
+					</goto>
+				</bl>
+				<bl s="102" e="107">
+					<goto s="105" e="107">
+						<tg s="62" e="69" id="46" count="52"/>
+					</goto>
+				</bl>
+				<bl s="108" e="125">
+				</bl>
+				<bl s="126" e="133">
+					<fall s="126" e="133" id="55" count="5"/>
+					<br s="131" e="133">
+						<cond s="172" e="172" id="47" count="5" val="true"/>
+						<cond s="134" e="135" id="48" count="52" val="false"/>
+					</br>
+				</bl>
+				<bl s="134" e="135">
+				</bl>
+				<bl s="136" e="143">
+					<fall s="136" e="143" id="56" count="52"/>
+					<br s="141" e="143">
+						<cond s="166" e="171" id="49" count="52" val="true"/>
+						<cond s="144" e="165" id="50" count="598" val="false"/>
+					</br>
+				</bl>
+				<bl s="144" e="165">
+					<goto s="163" e="165">
+						<tg s="136" e="143" id="51" count="598"/>
+					</goto>
+				</bl>
+				<bl s="166" e="171">
+					<goto s="169" e="171">
+						<tg s="126" e="133" id="52" count="52"/>
+					</goto>
+				</bl>
+				<bl s="172" e="172">
+					<exit s="172" e="172" opcode="return"/>
+				</bl>
+				<lt>0=26;4=27;12=28;20=29;28=30;36=31;44=32;60=33;70=34;80=35;96=34;102=33;108=38;124=39;134=40;144=41;160=40;166=39;172=44;</lt>
+			</meth>
+			<meth name="getNumRows" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="57" count="31014"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=47;</lt>
+			</meth>
+			<meth name="getNumColumns" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="58" count="306"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=51;</lt>
+			</meth>
+			<meth name="getBoxWidth" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="59" count="2"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=55;</lt>
+			</meth>
+			<meth name="getBoxHeight" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="60" count="2"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=59;</lt>
+			</meth>
+			<meth name="getValidValues" vmsig="()[Ljava/lang/String;" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="61" count="1381041"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=63;</lt>
+			</meth>
+			<meth name="makeMove" vmsig="(IILjava/lang/String;Z)V" flags=' public' access="1" length="47">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="62" count="31095"/>
+					<br s="5" e="7">
+						<cond s="46" e="46" id="63" count="1" val="true"/>
+						<cond s="8" e="17" id="64" count="31094" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="17">
+					<br s="15" e="17">
+						<cond s="46" e="46" id="65" count="4" val="true"/>
+						<cond s="18" e="26" id="66" count="31090" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="26">
+					<br s="24" e="26">
+						<cond s="46" e="46" id="67" count="1" val="true"/>
+						<cond s="27" e="45" id="68" count="31089" val="false"/>
+					</br>
+				</bl>
+				<bl s="27" e="45">
+				</bl>
+				<bl s="46" e="46">
+					<fall s="46" e="46" id="69" count="31089"/>
+					<exit s="46" e="46" opcode="return"/>
+				</bl>
+				<lt>0=67;27=68;36=69;46=71;</lt>
+			</meth>
+			<meth name="isValidMove" vmsig="(IILjava/lang/String;)Z" flags=' public' access="1" length="41">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="70" count="31094"/>
+					<br s="6" e="8">
+						<cond s="39" e="40" id="71" count="1" val="true"/>
+						<cond s="9" e="17" id="72" count="31093" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="17">
+					<br s="15" e="17">
+						<cond s="39" e="40" id="73" count="1" val="true"/>
+						<cond s="18" e="26" id="74" count="31092" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="26">
+					<br s="24" e="26">
+						<cond s="39" e="40" id="75" count="1" val="true"/>
+						<cond s="27" e="36" id="76" count="31091" val="false"/>
+					</br>
+				</bl>
+				<bl s="27" e="36">
+					<br s="34" e="36">
+						<cond s="39" e="40" id="77" count="1" val="true"/>
+						<cond s="37" e="38" id="78" count="31090" val="false"/>
+					</br>
+				</bl>
+				<bl s="37" e="38">
+					<exit s="38" e="38" opcode="ireturn"/>
+				</bl>
+				<bl s="39" e="40">
+					<exit s="40" e="40" opcode="ireturn"/>
+				</bl>
+				<lt>0=74;9=75;37=76;39=79;</lt>
+			</meth>
+			<meth name="numInCol" vmsig="(ILjava/lang/String;)Z" flags=' public' access="1" length="43">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="79" count="338940"/>
+					<br s="5" e="7">
+						<cond s="41" e="42" id="80" count="0" val="true"/>
+						<cond s="8" e="9" id="81" count="338940" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="9">
+				</bl>
+				<bl s="10" e="17">
+					<fall s="10" e="17" id="87" count="338940"/>
+					<br s="15" e="17">
+						<cond s="41" e="42" id="82" count="78034" val="true"/>
+						<cond s="18" e="32" id="83" count="3273873" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="32">
+					<br s="30" e="32">
+						<cond s="35" e="40" id="84" count="3012967" val="true"/>
+						<cond s="33" e="34" id="85" count="260906" val="false"/>
+					</br>
+				</bl>
+				<bl s="33" e="34">
+					<exit s="34" e="34" opcode="ireturn"/>
+				</bl>
+				<bl s="35" e="40">
+					<goto s="38" e="40">
+						<tg s="10" e="17" id="86" count="3012967"/>
+					</goto>
+				</bl>
+				<bl s="41" e="42">
+					<exit s="42" e="42" opcode="ireturn"/>
+				</bl>
+				<lt>0=83;8=84;18=85;33=86;35=84;41=90;</lt>
+			</meth>
+			<meth name="numInRow" vmsig="(ILjava/lang/String;)Z" flags=' public' access="1" length="43">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="88" count="513678"/>
+					<br s="5" e="7">
+						<cond s="41" e="42" id="89" count="0" val="true"/>
+						<cond s="8" e="9" id="90" count="513678" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="9">
+				</bl>
+				<bl s="10" e="17">
+					<fall s="10" e="17" id="96" count="513678"/>
+					<br s="15" e="17">
+						<cond s="41" e="42" id="91" count="338938" val="true"/>
+						<cond s="18" e="32" id="92" count="6015613" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="32">
+					<br s="30" e="32">
+						<cond s="35" e="40" id="93" count="5840873" val="true"/>
+						<cond s="33" e="34" id="94" count="174740" val="false"/>
+					</br>
+				</bl>
+				<bl s="33" e="34">
+					<exit s="34" e="34" opcode="ireturn"/>
+				</bl>
+				<bl s="35" e="40">
+					<goto s="38" e="40">
+						<tg s="10" e="17" id="95" count="5840873"/>
+					</goto>
+				</bl>
+				<bl s="41" e="42">
+					<exit s="42" e="42" opcode="ireturn"/>
+				</bl>
+				<lt>0=94;8=95;18=96;33=97;35=95;41=101;</lt>
+			</meth>
+			<meth name="numInBox" vmsig="(IILjava/lang/String;)Z" flags=' public' access="1" length="112">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="97" count="78033"/>
+					<br s="6" e="8">
+						<cond s="110" e="111" id="98" count="0" val="true"/>
+						<cond s="9" e="46" id="99" count="78033" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="46">
+				</bl>
+				<bl s="47" e="60">
+					<fall s="47" e="60" id="108" count="78033"/>
+					<br s="58" e="60">
+						<cond s="110" e="111" id="100" count="61864" val="true"/>
+						<cond s="61" e="64" id="101" count="284812" val="false"/>
+					</br>
+				</bl>
+				<bl s="61" e="64">
+				</bl>
+				<bl s="65" e="78">
+					<fall s="65" e="78" id="109" count="284812"/>
+					<br s="76" e="78">
+						<cond s="104" e="109" id="102" count="268643" val="true"/>
+						<cond s="79" e="95" id="103" count="1092048" val="false"/>
+					</br>
+				</bl>
+				<bl s="79" e="95">
+					<br s="93" e="95">
+						<cond s="98" e="103" id="104" count="1075879" val="true"/>
+						<cond s="96" e="97" id="105" count="16169" val="false"/>
+					</br>
+				</bl>
+				<bl s="96" e="97">
+					<exit s="97" e="97" opcode="ireturn"/>
+				</bl>
+				<bl s="98" e="103">
+					<goto s="101" e="103">
+						<tg s="65" e="78" id="106" count="1075879"/>
+					</goto>
+				</bl>
+				<bl s="104" e="109">
+					<goto s="107" e="109">
+						<tg s="47" e="60" id="107" count="268643"/>
+					</goto>
+				</bl>
+				<bl s="110" e="111">
+					<exit s="111" e="111" opcode="ireturn"/>
+				</bl>
+				<lt>0=105;9=106;17=107;25=109;34=110;43=112;61=113;79=114;96=115;98=113;104=112;110=120;</lt>
+			</meth>
+			<meth name="isSlotAvailable" vmsig="(II)Z" flags=' public' access="1" length="40">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="110" count="30948"/>
+					<br s="6" e="8">
+						<cond s="38" e="38" id="111" count="4" val="true"/>
+						<cond s="9" e="24" id="112" count="30944" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="24">
+					<br s="22" e="24">
+						<cond s="38" e="38" id="113" count="57" val="true"/>
+						<cond s="25" e="33" id="114" count="30887" val="false"/>
+					</br>
+				</bl>
+				<bl s="25" e="33">
+					<br s="31" e="33">
+						<cond s="38" e="38" id="115" count="1" val="true"/>
+						<cond s="34" e="37" id="116" count="30886" val="false"/>
+					</br>
+				</bl>
+				<bl s="34" e="37">
+					<goto s="35" e="37">
+						<tg s="39" e="39" id="117" count="30886"/>
+					</goto>
+				</bl>
+				<bl s="38" e="38">
+				</bl>
+				<bl s="39" e="39">
+					<fall s="39" e="39" id="118" count="62"/>
+					<exit s="39" e="39" opcode="ireturn"/>
+				</bl>
+				<lt>0=124;</lt>
+			</meth>
+			<meth name="isSlotMutable" vmsig="(II)Z" flags=' public' access="1" length="9">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="119" count="62146"/>
+					<exit s="8" e="8" opcode="ireturn"/>
+				</bl>
+				<lt>0=128;</lt>
+			</meth>
+			<meth name="getValue" vmsig="(II)Ljava/lang/String;" flags=' public' access="1" length="21">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="120" count="280"/>
+					<br s="6" e="8">
+						<cond s="18" e="20" id="121" count="0" val="true"/>
+						<cond s="9" e="17" id="122" count="280" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="17">
+					<exit s="17" e="17" opcode="areturn"/>
+				</bl>
+				<bl s="18" e="20">
+					<exit s="20" e="20" opcode="areturn"/>
+				</bl>
+				<lt>0=132;9=133;18=135;</lt>
+			</meth>
+			<meth name="getBoard" vmsig="()[[Ljava/lang/String;" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="123" count="1"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=139;</lt>
+			</meth>
+			<meth name="isValidValue" vmsig="(Ljava/lang/String;)Z" flags=' private' access="2" length="42">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="124" count="31095"/>
+				</bl>
+				<bl s="11" e="16">
+					<fall s="11" e="16" id="130" count="31095"/>
+					<br s="14" e="16">
+						<cond s="40" e="41" id="125" count="1" val="true"/>
+						<cond s="17" e="31" id="126" count="154273" val="false"/>
+					</br>
+				</bl>
+				<bl s="17" e="31">
+					<br s="29" e="31">
+						<cond s="34" e="39" id="127" count="123179" val="true"/>
+						<cond s="32" e="33" id="128" count="31094" val="false"/>
+					</br>
+				</bl>
+				<bl s="32" e="33">
+					<exit s="33" e="33" opcode="ireturn"/>
+				</bl>
+				<bl s="34" e="39">
+					<goto s="37" e="39">
+						<tg s="11" e="16" id="129" count="123179"/>
+					</goto>
+				</bl>
+				<bl s="40" e="41">
+					<exit s="41" e="41" opcode="ireturn"/>
+				</bl>
+				<lt>0=143;23=144;34=143;40=146;</lt>
+			</meth>
+			<meth name="inRange" vmsig="(II)Z" flags=' public' access="1" length="30">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="131" count="171172"/>
+					<br s="5" e="7">
+						<cond s="28" e="28" id="132" count="2" val="true"/>
+						<cond s="8" e="15" id="133" count="171170" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="15">
+					<br s="13" e="15">
+						<cond s="28" e="28" id="134" count="1" val="true"/>
+						<cond s="16" e="19" id="135" count="171169" val="false"/>
+					</br>
+				</bl>
+				<bl s="16" e="19">
+					<br s="17" e="19">
+						<cond s="28" e="28" id="136" count="1" val="true"/>
+						<cond s="20" e="23" id="137" count="171168" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="23">
+					<br s="21" e="23">
+						<cond s="28" e="28" id="138" count="1" val="true"/>
+						<cond s="24" e="27" id="139" count="171167" val="false"/>
+					</br>
+				</bl>
+				<bl s="24" e="27">
+					<goto s="25" e="27">
+						<tg s="29" e="29" id="140" count="171167"/>
+					</goto>
+				</bl>
+				<bl s="28" e="28">
+				</bl>
+				<bl s="29" e="29">
+					<fall s="29" e="29" id="141" count="5"/>
+					<exit s="29" e="29" opcode="ireturn"/>
+				</bl>
+				<lt>0=150;</lt>
+			</meth>
+			<meth name="boardFull" vmsig="()Z" flags=' public' access="1" length="52">
+				<bl s="0" e="1">
+					<methenter s="0" e="1" id="142" count="30776"/>
+				</bl>
+				<bl s="2" e="9">
+					<fall s="2" e="9" id="151" count="30776"/>
+					<br s="7" e="9">
+						<cond s="50" e="51" id="143" count="5" val="true"/>
+						<cond s="10" e="11" id="144" count="31060" val="false"/>
+					</br>
+				</bl>
+				<bl s="10" e="11">
+				</bl>
+				<bl s="12" e="19">
+					<fall s="12" e="19" id="152" count="31060"/>
+					<br s="17" e="19">
+						<cond s="44" e="49" id="145" count="289" val="true"/>
+						<cond s="20" e="35" id="146" count="241471" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="35">
+					<br s="33" e="35">
+						<cond s="38" e="43" id="147" count="210700" val="true"/>
+						<cond s="36" e="37" id="148" count="30771" val="false"/>
+					</br>
+				</bl>
+				<bl s="36" e="37">
+					<exit s="37" e="37" opcode="ireturn"/>
+				</bl>
+				<bl s="38" e="43">
+					<goto s="41" e="43">
+						<tg s="12" e="19" id="149" count="210700"/>
+					</goto>
+				</bl>
+				<bl s="44" e="49">
+					<goto s="47" e="49">
+						<tg s="2" e="9" id="150" count="289"/>
+					</goto>
+				</bl>
+				<bl s="50" e="51">
+					<exit s="51" e="51" opcode="ireturn"/>
+				</bl>
+				<lt>0=154;10=155;20=156;38=155;44=154;50=159;</lt>
+			</meth>
+			<meth name="makeSlotEmpty" vmsig="(II)V" flags=' public' access="1" length="11">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="153" count="30302"/>
+					<exit s="10" e="10" opcode="return"/>
+				</bl>
+				<lt>0=163;10=164;</lt>
+			</meth>
+			<meth name="toString" vmsig="()Ljava/lang/String;" flags=' public' access="1" length="106">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="154" count="8"/>
+				</bl>
+				<bl s="5" e="12">
+					<fall s="5" e="12" id="161" count="8"/>
+					<br s="10" e="12">
+						<cond s="86" e="105" id="155" count="8" val="true"/>
+						<cond s="13" e="14" id="156" count="79" val="false"/>
+					</br>
+				</bl>
+				<bl s="13" e="14">
+				</bl>
+				<bl s="15" e="22">
+					<fall s="15" e="22" id="162" count="79"/>
+					<br s="20" e="22">
+						<cond s="60" e="85" id="157" count="79" val="true"/>
+						<cond s="23" e="59" id="158" count="841" val="false"/>
+					</br>
+				</bl>
+				<bl s="23" e="59">
+					<goto s="57" e="59">
+						<tg s="15" e="22" id="159" count="841"/>
+					</goto>
+				</bl>
+				<bl s="60" e="85">
+					<goto s="83" e="85">
+						<tg s="5" e="12" id="160" count="79"/>
+					</goto>
+				</bl>
+				<bl s="86" e="105">
+					<exit s="105" e="105" opcode="areturn"/>
+				</bl>
+				<lt>0=168;3=169;13=170;23=171;54=170;60=173;80=169;86=175;</lt>
+			</meth>
+			<meth name="initializeBoard" vmsig="()V" flags=' private' access="2" length="43">
+				<bl s="0" e="1">
+					<methenter s="0" e="1" id="163" count="9"/>
+				</bl>
+				<bl s="2" e="9">
+					<fall s="2" e="9" id="170" count="9"/>
+					<br s="7" e="9">
+						<cond s="42" e="42" id="164" count="9" val="true"/>
+						<cond s="10" e="11" id="165" count="88" val="false"/>
+					</br>
+				</bl>
+				<bl s="10" e="11">
+				</bl>
+				<bl s="12" e="19">
+					<fall s="12" e="19" id="171" count="88"/>
+					<br s="17" e="19">
+						<cond s="36" e="41" id="166" count="88" val="true"/>
+						<cond s="20" e="35" id="167" count="922" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="35">
+					<goto s="33" e="35">
+						<tg s="12" e="19" id="168" count="922"/>
+					</goto>
+				</bl>
+				<bl s="36" e="41">
+					<goto s="39" e="41">
+						<tg s="2" e="9" id="169" count="88"/>
+					</goto>
+				</bl>
+				<bl s="42" e="42">
+					<exit s="42" e="42" opcode="return"/>
+				</bl>
+				<lt>0=179;10=180;20=181;30=180;36=179;42=184;</lt>
+			</meth>
+			<meth name="initializeMutableSlots" vmsig="()V" flags=' private' access="2" length="42">
+				<bl s="0" e="1">
+					<methenter s="0" e="1" id="172" count="9"/>
+				</bl>
+				<bl s="2" e="9">
+					<fall s="2" e="9" id="179" count="9"/>
+					<br s="7" e="9">
+						<cond s="41" e="41" id="173" count="9" val="true"/>
+						<cond s="10" e="11" id="174" count="88" val="false"/>
+					</br>
+				</bl>
+				<bl s="10" e="11">
+				</bl>
+				<bl s="12" e="19">
+					<fall s="12" e="19" id="180" count="88"/>
+					<br s="17" e="19">
+						<cond s="35" e="40" id="175" count="88" val="true"/>
+						<cond s="20" e="34" id="176" count="922" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="34">
+					<goto s="32" e="34">
+						<tg s="12" e="19" id="177" count="922"/>
+					</goto>
+				</bl>
+				<bl s="35" e="40">
+					<goto s="38" e="40">
+						<tg s="2" e="9" id="178" count="88"/>
+					</goto>
+				</bl>
+				<bl s="41" e="41">
+					<exit s="41" e="41" opcode="return"/>
+				</bl>
+				<lt>0=187;10=188;20=189;29=188;35=187;41=192;</lt>
+			</meth>
+		</class>
+		<class name="SudokuPuzzleType" supername="java/lang/Enum" checksum="171237587" signature="Ljava/lang/Enum&lt;Lnet/mooctest/SudokuPuzzleType;&gt;;" source="SudokuPuzzleType.java" flags=' public final enum'>
+			<meth name="values" vmsig="()[Lnet/mooctest/SudokuPuzzleType;" flags=' public static' access="9" length="10">
+				<bl s="0" e="9">
+					<methenter s="0" e="9" id="181" count="0"/>
+					<exit s="9" e="9" opcode="areturn"/>
+				</bl>
+				<lt>0=3;</lt>
+			</meth>
+			<meth name="valueOf" vmsig="(Ljava/lang/String;)Lnet/mooctest/SudokuPuzzleType;" flags=' public static' access="9" length="10">
+				<bl s="0" e="9">
+					<methenter s="0" e="9" id="182" count="0"/>
+					<exit s="9" e="9" opcode="areturn"/>
+				</bl>
+				<lt>0=3;</lt>
+			</meth>
+			<meth name="&lt;init&gt;" vmsig="(Ljava/lang/String;IIIII[Ljava/lang/String;Ljava/lang/String;)V" flags=' private' access="2" cons="true" signature="(IIII[Ljava/lang/String;Ljava/lang/String;)V" length="42">
+				<bl s="0" e="41">
+					<methenter s="0" e="41" id="183" count="4"/>
+					<exit s="41" e="41" opcode="return"/>
+				</bl>
+				<lt>0=16;6=17;11=18;17=19;23=20;29=21;35=22;41=23;</lt>
+			</meth>
+			<meth name="getRows" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="184" count="15"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=26;</lt>
+			</meth>
+			<meth name="getColumns" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="185" count="15"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=30;</lt>
+			</meth>
+			<meth name="getBoxWidth" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="186" count="15"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=34;</lt>
+			</meth>
+			<meth name="getBoxHeight" vmsig="()I" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="187" count="15"/>
+					<exit s="4" e="4" opcode="ireturn"/>
+				</bl>
+				<lt>0=38;</lt>
+			</meth>
+			<meth name="getValidValues" vmsig="()[Ljava/lang/String;" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="188" count="15"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=42;</lt>
+			</meth>
+			<meth name="toString" vmsig="()Ljava/lang/String;" flags=' public' access="1" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="189" count="4"/>
+					<exit s="4" e="4" opcode="areturn"/>
+				</bl>
+				<lt>0=46;</lt>
+			</meth>
+			<meth name="&lt;clinit&gt;" vmsig="()V" flags=' static' access="8" clinit="true" length="370">
+				<bl s="0" e="369">
+					<methenter s="0" e="369" id="190" count="1"/>
+					<exit s="369" e="369" opcode="return"/>
+				</bl>
+				<lt>0=4;56=5;130=6;222=7;338=3;</lt>
+			</meth>
+		</class>
+	</package>
+</coverage>
